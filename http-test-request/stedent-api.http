@@ -1,0 +1,40 @@
+GET http://localhost:8090/api/students/ HTTP/1.1
+content-type: application/json
+
+###
+
+POST http://localhost:8090/api/students/ HTTP/1.1
+content-type: application/json
+
+{
+    "name" : "Tito",
+    "lastname" : "Cristales",
+    "email" : "tito.cristales@mylab.com"
+}
+
+###
+
+POST http://localhost:8090/api/students/ HTTP/1.1
+content-type: application/json
+
+{
+    "name" : "Joe",
+    "lastname" : "Doe",
+    "email" : "jode.doe@mylab.com"
+}
+
+###
+
+GET http://localhost:8090/api/students/2 HTTP/1.1
+content-type: application/json
+
+###
+
+PUT http://localhost:8090/api/students/2 HTTP/1.1
+content-type: application/json
+
+{
+    "name" : "Joe",
+    "lastname" : "Dow",
+    "email" : "jode.dow@mylab.com"
+}
