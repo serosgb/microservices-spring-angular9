@@ -1,6 +1,5 @@
-package org.mylab.microservices.app.usuarios.models.entity;
+package org.mylab.microservices.courses.model.entity;
 
-import javax.persistence.Column;
 import javax.persistence.Embedded;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -13,22 +12,15 @@ import org.mylab.microservices.commons.model.entity.Audit;
 import lombok.Data;
 
 @Entity
-@Table(name="students")
+@Table(name = "courses")
 @Data
-public class Student {
+public class Course {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	
-	@Column(name = "student_name")
+
 	private String name;
-	
-	private String lastname;
-	
-	@Column(unique=true)
-	private String email;
-	
-    @Embedded
-    private Audit audit = new Audit();	
-	
+
+	@Embedded
+	private Audit audit = new Audit();
 }

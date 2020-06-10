@@ -29,16 +29,3 @@ build/
 
 ### VS Code ###
 .vscode/
-
-### Docker Compose ###
-docker-compose/data/mysql
-docker-compose/data/performance_schema
-docker-compose/data/aria*
-docker-compose/data/ib*
-docker-compose/data/multi*
-docker-compose/data/binlog*
-docker-compose/data/*.pem
-docker-compose/data/*.cnf
-docker-compose/data/*.ibd
-docker-compose/data/undo_*
-docker-compose/data/*.dblwr
